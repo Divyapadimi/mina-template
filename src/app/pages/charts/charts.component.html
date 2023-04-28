@@ -1,0 +1,143 @@
+<h5>Charts</h5>
+<div class="row mt-2">
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0"> BarChart Vertical</h5>
+      </div>
+      <div class="card-body">
+        <p-chart type="bar" [data]="basicData" [options]="basicOptions"></p-chart>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0"> BarChart Horizontal</h5>
+      </div>
+      <div class="card-body">
+        <p-chart type="bar" [data]="basicData" [options]="horizontalOptions"></p-chart>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0"> BarChart Multi Axis</h5>
+      </div>
+      <div class="card-body">
+        <p-chart type="bar" [data]="multiAxisData" [options]="multiAxisOptions"></p-chart>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0"> BarChart Stacked</h5>
+      </div>
+      <div class="card-body">
+        <p-chart type="bar" [data]="stackedData" [options]="stackedOptions"></p-chart>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0">DoughnutChart</h5>
+      </div>
+      <div class="card-body">
+        <div class="justify-content-center" style="width: 227px; height: 240px;">
+          <p-chart type="doughnut" [data]="data" [options]="chartOptions"></p-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0">Combo Chart</h5>
+      </div>
+      <div class="card-body">
+        <p-chart type="bar" [data]="dataCombo" [options]="combochartOptions"></p-chart>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0">Radar Chart</h5>
+      </div>
+      <div class="card-body">
+        <div style="width: 227px; height: 209.8px;" class="mb-2">
+          <p-chart type="radar" [data]="Radardata" [options]="RadarchartOptions"></p-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0">Pie Chart</h5>
+      </div>
+      <div class="card-body">
+        <div style="width: 227px; height: 209.8px;" class=" text-center mb-2">
+          <p-chart type="pie" [data]="Piedata" [options]="PiechartOptions"></p-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0">Polar Area Chart</h5>
+      </div>
+      <div class="card-body">
+        <div style="width: 243px; height: 209.8px;" class="mb-3">
+          <p-chart type="radar" [data]="Polardata" [options]="PolarchartOptions"></p-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0"> Line Chart</h5>
+      </div>
+      <div class="card-body">
+        <p-chart type="line" [data]="basicLineChartData" [options]="LineChartOptions"></p-chart>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0">Line Chart Multi Axis</h5>
+      </div>
+      <div class="card-body">
+        <p-chart type="line" [data]="LineChartmultiAxisData" [options]="LineChartmultiAxisOptions"></p-chart>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title mb-0">Line Chart Line Styles</h5>
+      </div>
+      <div class="card-body">
+        <div style="width: 227px; height: 230px;" class="mb-2">
+          <p-chart type="pie" [data]="LineStylesdata" [options]="LineStylesOptions"></p-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

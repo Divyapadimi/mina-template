@@ -1,0 +1,1566 @@
+<h5>Bootstrap Basic Tables</h5>
+<div class="row mt-2">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Basic example</h5>
+        <p class="basictable">For basic styling—light padding and only horizontal dividers—add the base class<span
+            class="color"> .table</span> to any<span class="color"> table</span> .</p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{row.id}}</td>
+              <td>{{row.FirstName}}</td>
+              <td>{{row.LastName}}</td>
+              <td>{{row.UserName}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Dark table</h5>
+        <p class="basictable">You can also invert the colors—with light text on dark backgrounds—with <span
+            class="color"> .table-dark</span>.</p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table  table-dark table-striped mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{row.id}}</td>
+              <td>{{row.FirstName}}</td>
+              <td>{{row.LastName}}</td>
+              <td>{{row.UserName}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header my-2">
+        <h5 class="card-title">Table head</h5>
+        <p class="basictable">Use one of two modifier classes to make <span class="color"> &lt;table &gt;</span>s appear
+          light or dark gray.</p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table  table-light mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{row.id}}</td>
+              <td>{{row.FirstName}}</td>
+              <td>{{row.LastName}}</td>
+              <td>{{row.UserName}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header my-2">
+        <h5 class="card-title">Striped rows</h5>
+        <p class="basictable">Use<span class="color">.table-striped </span> to add zebra-striping to any table row
+          within
+          the <span class="color"> &lt; tbody &gt;</span></p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table table-striped mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{row.id}}</td>
+              <td>{{row.FirstName}}</td>
+              <td>{{row.LastName}}</td>
+              <td>{{row.UserName}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Bordered table</h5>
+        <p class="basictable">Add<span class="color"> .table-bordered</span> for borders on all sides of the table and
+          cells.</p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table table-bordered mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{row.id}}</td>
+              <td>{{row.FirstName}}</td>
+              <td>{{row.LastName}}</td>
+              <td>{{row.UserName}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Borderless table</h5>
+        <p class="basictable">Add <span class="color"> ..table-borderless</span> for a table without borders.</p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table table-borderless mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{row.id}}</td>
+              <td>{{row.FirstName}}</td>
+              <td>{{row.LastName}}</td>
+              <td>{{row.UserName}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Table Border color</h5>
+        <p class="basictable">Add<span class="color"> .table-bordered</span> &<span class="color">.border-* </span> for
+          colored borders on all sides of the table and cells.</p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table table-bordered border-primary mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{row.id}}</td>
+              <td>{{row.FirstName}}</td>
+              <td>{{row.LastName}}</td>
+              <td>{{row.UserName}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Table Border color</h5>
+        <p class="basictable">Add<span class="color"> .table-bordered</span> &<span class="color">.border-* </span> for
+          colored borders on all sides of the table and cells.</p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table table-bordered border-primary mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{row.id}}</td>
+              <td>{{row.FirstName}}</td>
+              <td>{{row.LastName}}</td>
+              <td>{{row.UserName}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Vertical alignment</h5>
+        <p class="basictable">Table cells in<span class="color"> &lt;tbody&gt;</span> inherit their alignment from <span
+            class="color"> &lt;table&gt;</span>and are aligned to the the top by default. Use the vertical align classes
+          to re-align where needed.</p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table align-middle mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{row.id}}</td>
+              <td>{{row.FirstName}}</td>
+              <td>{{row.LastName}}</td>
+              <td><button type="button" class="btn btn-light btn-sm">View</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Nesting</h5>
+        <p class="basictable">Border styles, active styles, and table variants are not inherited by nested tables.</p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table table-striped table-bordered mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First </th>
+              <th>Last </th>
+              <th>Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <table class="table table-bordered mb-0">
+                  <thead>
+                    <tr>
+                      <th>Header</th>
+                      <th>Header</th>
+                      <th>Header</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>First</td>
+                      <td>Last</td>
+                    </tr>
+                    <tr>
+                      <td>A</td>
+                      <td>First</td>
+                      <td>Last</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Hoverable rows</h5>
+        <p class="basictable">Add<span class="color"> .table-hover</span> to enable a hover state on table rows within a
+          <span class="color"> &lt;tbody&gt;</span>.
+        </p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table table-hover mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{row.id}}</td>
+              <td>{{row.FirstName}}</td>
+              <td>{{row.LastName}}</td>
+              <td>{{row.UserName}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Small table</h5>
+        <p class="basictable">Add <span class="color"> .table-sm</span> to make tables more compact by cutting cell
+          padding in half.</p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table table-sm m-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{row.id}}</td>
+              <td>{{row.FirstName}}</td>
+              <td>{{row.LastName}}</td>
+              <td>{{row.UserName}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Contextual classes</h5>
+        <p class="basictable">Use contextual classes to color table rows or individual cells.</p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table table-hover mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Column Heading</th>
+              <th>Column Heading</th>
+              <th>Column Heading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let column of columns ">
+              <td>{{column.id}}</td>
+              <td>{{column.ColumnHeading}}</td>
+              <td>{{column.ColumnHeading}}</td>
+              <td>{{column.ColumnHeading}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Captions</h5>
+        <p class="basictable">A <span class="color">&lt;Caption&gt;</span> functions like a heading for a table. It
+          helps users with screen readers to find a table and understand what it’s about and decide if they want to read
+          it.</p>
+      </div>
+      <div class="card-body ">
+        <table class="table ">
+          <thead>
+
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>User Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of rows">
+              <td>{{row.id}}</td>
+              <td>{{row.FirstName}}</td>
+              <td>{{row.LastName}}</td>
+              <td>{{row.UserName}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="pt-1">List of users</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Responsive table</h5>
+        <p class="basictable">Create responsive tables by wrapping any<span class="color"> .table</span> in <span
+            class="color">.table-responsive</span> to make them scroll horizontally on small devices (under 768px).</p>
+      </div>
+      <div class="card-body mb-2">
+        <table class="table table-hover table-responsive mb-0">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Table Heading</th>
+              <th>Table Heading</th>
+              <th>Table Heading</th>
+              <th>Table Heading</th>
+              <th>Table Heading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of responsive">
+              <td>{{row.id}}</td>
+              <td>{{row.Tablecontent}}</td>
+              <td>{{row.Tablecontent}}</td>
+              <td>{{row.Tablecontent}}</td>
+              <td>{{row.Tablecontent}}</td>
+              <td>{{row.Tablecontent}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h5 class="mt-3">Data Tables</h5>
+<div class="row">
+  <div class="col-6 mb-2">
+    <p-card>
+      <h5>Basic Table</h5>
+      <p-table [value]="products">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+  </div>
+  <div class="col-6 mb-2">
+    <p-card>
+      <h5>Table Dynamic Columns</h5>
+
+      <p-table [columns]="cols" [value]="products" responsiveLayout="scroll">
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th *ngFor="let col of columns">
+              {{col.header}}
+            </th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+          <tr>
+            <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+  </div>
+  <div class="col-12 mb-2">
+    <p-card>
+      <h5>Table Templating</h5>
+      <p-table [value]="products" responsiveLayout="scroll">
+        <ng-template pTemplate="caption">
+          <div class="d-flex align-items-center justify-content-between">
+            Products
+            <p-button icon="pi pi-refresh"></p-button>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Reviews</th>
+            <th>Status</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>{{product.name}}</td>
+            <td><img [src]="'assets/products/Images/' + product.image" [alt]="product.name" width="100"
+                class="shadow-4" /></td>
+            <td>{{product.price | currency:'USD'}}</td>
+            <td>{{product.category}}</td>
+            <td>
+              <p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false"></p-rating>
+            </td>
+            <td><span
+                [class]="'product-badge status-' + product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span>
+            </td>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="summary">
+          <div class="flex align-items-center justify-content-between">
+            In total there are {{products ? products.length : 0 }} products.
+          </div>
+        </ng-template>
+      </p-table>
+
+    </p-card>
+  </div>
+  <div class="col-12 mb-2">
+    <p-card>
+      <h5>Table Size</h5>
+      <p class="m-2">In addition to a regular table, alternatives with alternative sizes are available.</p>
+      <div class="card mb-2">
+        <p-table [value]="products" styleClass="p-datatable-sm" responsiveLayout="scroll">
+          <ng-template pTemplate="caption">
+            Small Table
+          </ng-template>
+          <ng-template pTemplate="header">
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Quantity</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-product>
+            <tr>
+              <td>{{product.code}}</td>
+              <td>{{product.name}}</td>
+              <td>{{product.category}}</td>
+              <td>{{product.quantity}}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+
+      <div class="card mb-2">
+        <p-table [value]="products" responsiveLayout="scroll">
+          <ng-template pTemplate="caption">
+            Normale Table
+          </ng-template>
+          <ng-template pTemplate="header">
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Quantity</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-product>
+            <tr>
+              <td>{{product.code}}</td>
+              <td>{{product.name}}</td>
+              <td>{{product.category}}</td>
+              <td>{{product.quantity}}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+
+      <div class="card">
+        <p-table [value]="products" styleClass="p-datatable-lg" responsiveLayout="scroll">
+          <ng-template pTemplate="caption">
+            Large Table
+          </ng-template>
+          <ng-template pTemplate="header">
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Quantity</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-product>
+            <tr>
+              <td>{{product.code}}</td>
+              <td>{{product.name}}</td>
+              <td>{{product.category}}</td>
+              <td>{{product.quantity}}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </p-card>
+  </div>
+  <div class="col-12 mb-2">
+    <p-card>
+      <h5>Table GridLines</h5>
+      <p class="m-2">Adding <b>p-datatable-gridlines</b> displays borders between cells. Note: Some themes may always
+        display gridlines by design.</p>
+      <p-table [value]="products" styleClass="p-datatable-gridlines" responsiveLayout="scroll">
+        <ng-template pTemplate="caption">
+          Header
+        </ng-template>
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="summary">
+          Footer
+        </ng-template>
+      </p-table>
+
+    </p-card>
+  </div>
+  <div class="col-12 mb-2">
+    <p-card>
+      <h5>Table Striped</h5>
+      <p class="m-2">Adding <b>p-datatable-striped</b> displays striped rows.</p>
+      <p-table [value]="products" styleClass="p-datatable-striped" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+
+    </p-card>
+  </div>
+  <div class="col-12 mb-2">
+    <p-card>
+      <h5>Table Column Group</h5>
+      <p class="m-2">Columns can be grouped using rowspan and colspan properties.</p>
+      <p-table [value]="sales" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+          <tr>
+            <th rowspan="3">Product</th>
+            <th colspan="4">Sale Rate</th>
+          </tr>
+          <tr>
+            <th colspan="2">Sales</th>
+            <th colspan="2">Profits</th>
+          </tr>
+          <tr>
+            <th>Last Year</th>
+            <th>This Year</th>
+            <th>Last Year</th>
+            <th>This Year</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-sale>
+          <tr>
+            <td>{{sale.product}}</td>
+            <td>{{sale.lastYearSale}}%</td>
+            <td>{{sale.thisYearSale}}%</td>
+            <td>{{sale.lastYearProfit | currency: 'USD'}}</td>
+            <td>{{sale.thisYearProfit | currency: 'USD'}}</td>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="footer">
+          <tr>
+            <td colspan="3" class="text-right">Totals</td>
+            <td>{{lastYearTotal | currency: 'USD'}}</td>
+            <td>{{thisYearTotal | currency: 'USD'}}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+  </div>
+  <div class="col-12 mb-2">
+    <p-card>
+      <h5>Table Page</h5>
+      <p class="m-2">Pagination is enabled by setting paginator property to true and defining a rows property to specify
+        the number of rows per page. For server side pagination, see the lazy loading example.</p>
+      <div class="card">
+        <h5 class="m-2">Implicit Pagination</h5>
+        <p-table [value]="customers" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+          responsiveLayout="scroll" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+          [rowsPerPageOptions]="[10,25,50]">
+          <ng-template pTemplate="header">
+            <tr>
+              <th>Name</th>
+              <th>Country</th>
+              <th>Company</th>
+              <th>Representative</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-customer>
+            <tr>
+              <td>{{customer.name}}</td>
+              <td>{{customer.country.name}}</td>
+              <td>{{customer.company}}</td>
+              <td>{{customer.representative.name}}</td>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="paginatorleft">
+            <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+          </ng-template>
+          <ng-template pTemplate="paginatorright">
+            <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+          </ng-template>
+        </p-table>
+      </div>
+
+
+      <div class="card mt-3">
+        <h5>Programmatic Control</h5>
+        <div class="mb-3">
+          <p-button type="button" icon="pi pi-chevron-left" (click)="prev()" [disabled]="isFirstPage()"
+            styleClass="p-button-text"></p-button>
+          <p-button type="button" icon="pi pi-refresh" (click)="reset()" styleClass="p-button-text"></p-button>
+          <p-button type="button" icon="pi pi-chevron-right" (click)="next()" [disabled]="isLastPage()"
+            styleClass="p-button-text"></p-button>
+        </div>
+        <p-table [value]="customers" [paginator]="true" [rows]="rows1" [showCurrentPageReport]="true" [(first)]="first"
+          responsiveLayout="scroll" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+          [rowsPerPageOptions]="[10,25,50]">
+          <ng-template pTemplate="header">
+            <tr>
+              <th>Name</th>
+              <th>Country</th>
+              <th>Company</th>
+              <th>Representative</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-customer>
+            <tr>
+              <td>{{customer.name}}</td>
+              <td>{{customer.country.name}}</td>
+              <td>{{customer.company}}</td>
+              <td>{{customer.representative.name}}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </p-card>
+  </div>
+  <div class="col-12 mb-2">
+    <p-card>
+      <h5>Table Sort</h5>
+      <p class="m-2">Table supports both single column and multiple column sorting.</p>
+      <div class="card p-2">
+        <h5>Single Column</h5>
+        <p-table [value]="products1">
+          <ng-template pTemplate="header">
+            <tr>
+              <th pSortableColumn="code">Code <p-sortIcon field="code"></p-sortIcon>
+              </th>
+              <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon>
+              </th>
+              <th pSortableColumn="category">Category <p-sortIcon field="category"></p-sortIcon>
+              </th>
+              <th pSortableColumn="quantity">Quantity <p-sortIcon field="quantity"></p-sortIcon>
+              </th>
+              <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon>
+              </th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-product>
+            <tr>
+              <td>{{product.code}}</td>
+              <td>{{product.name}}</td>
+              <td>{{product.category}}</td>
+              <td>{{product.quantity}}</td>
+              <td>{{product.price | currency: 'USD'}}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+
+
+      <div class="card mt-2 p-2">
+        <h5>Multiple Columns</h5>
+        <p>Use metakey to add a column to the sort selection.</p>
+
+        <p-table [value]="products2" sortMode="multiple">
+          <ng-template pTemplate="header">
+            <tr>
+              <th pSortableColumn="code">Code <p-sortIcon field="code"></p-sortIcon>
+              </th>
+              <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon>
+              </th>
+              <th pSortableColumn="category">Category <p-sortIcon field="category"></p-sortIcon>
+              </th>
+              <th pSortableColumn="quantity">Quantity <p-sortIcon field="quantity"></p-sortIcon>
+              </th>
+              <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon>
+              </th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-product>
+            <tr>
+              <td>{{product.code}}</td>
+              <td>{{product.name}}</td>
+              <td>{{product.category}}</td>
+              <td>{{product.quantity}}</td>
+              <td>{{product.price | currency: 'USD'}}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+      <div class="card mt-2 p-2">
+        <h5>Custom Sort</h5>
+        <p-table [value]="products3" (sortFunction)="customSort($event)" [customSort]="true">
+          <ng-template pTemplate="header">
+            <tr>
+              <th pSortableColumn="code">Code <p-sortIcon field="code"></p-sortIcon>
+              </th>
+              <th pSortableColumn="name">Name <p-sortIcon field="name"></p-sortIcon>
+              </th>
+              <th pSortableColumn="category">Category <p-sortIcon field="category"></p-sortIcon>
+              </th>
+              <th pSortableColumn="quantity">Quantity <p-sortIcon field="quantity"></p-sortIcon>
+              </th>
+              <th pSortableColumn="price">Price <p-sortIcon field="price"></p-sortIcon>
+              </th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-product>
+            <tr>
+              <td>{{product.code}}</td>
+              <td>{{product.name}}</td>
+              <td>{{product.category}}</td>
+              <td>{{product.quantity}}</td>
+              <td>{{product.price | currency: 'USD'}}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </p-card>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-12 mb-2">
+    <p-card>
+      <h5>Table Style</h5>
+      <p class="m-2">Certain rows or cells can easily be styled based on conditions.</p>
+      <p-table [value]="products" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr [ngClass]="{'row-accessories': product.category === 'Accessories'}">
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>
+              <div
+                [ngClass]="{'outofstock': product.quantity === 0, 'lowstock': (product.quantity > 0 && product.quantity < 10),'instock': product.quantity > 10}">
+                {{product.quantity}}
+              </div>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+  </div>
+
+</div>
+<div class="row mt-2">
+  <div class="col-12 mb-2">
+    <p-card>
+      <h5>Table Filter</h5>
+      <p class="m-2">Filtering feature provides advanced and flexible options to query the data. Tip: Visit the
+        FilterService for a custom filtering example.</p>
+      <div class="card">
+        <h5>Filter Menu</h5>
+        <p>Filters are displayed in an overlay.</p>
+        <p-table #dt1 [value]="customers" dataKey="id" [rows]="10" [showCurrentPageReport]="true"
+          [rowsPerPageOptions]="[10,25,50]" styleClass="p-datatable-gridlines" [paginator]="true"
+          currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+          [globalFilterFields]="['name','country.name','representative.name','status']">
+          <ng-template pTemplate="caption">
+            <div class="d-flex">
+              <button pButton label="Clear" class="p-button-outlined" icon="pi pi-filter-slash"
+                (click)="clear(dt1)"></button>
+              <div class="ms-auto">
+                <span class="p-input-icon-left ml-auto">
+                  <i class="pi pi-search"></i>
+                  <input pInputText type="text" (input)="dt1.filterGlobal($any($event.target).value , 'contains')"
+                    placeholder="Search keyword" />
+                </span>
+              </div>
+            </div>
+          </ng-template>
+          <ng-template pTemplate="header">
+            <tr>
+              <th>
+                <div class="flex justify-content-center align-items-center">
+                  Name
+                  <p-columnFilter type="text" field="name" display="menu"></p-columnFilter>
+                </div>
+              </th>
+              <th>
+                <div class="flex justify-content-center align-items-center">
+                  Country
+                  <p-columnFilter type="text" field="country.name" display="menu"></p-columnFilter>
+                </div>
+              </th>
+              <th>
+                <div class="flex justify-content-center align-items-center">
+                  Agent
+                  <p-columnFilter field="representative" matchMode="in" display="menu" [showMatchModes]="false"
+                    [showOperator]="false" [showAddButton]="false">
+                    <ng-template pTemplate="header">
+                      <div class="px-3 pt-3 pb-0">
+                        <span class="font-bold">Agent Picker</span>
+                      </div>
+                    </ng-template>
+                    <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                      <p-multiSelect [ngModel]="value" [options]="representatives" placeholder="Any"
+                        (onChange)="filter($event.value)" optionLabel="name">
+                        <ng-template let-option pTemplate="item">
+                          <div class="p-multiselect-representative-option">
+                            <img [alt]="option.label" src="assets/showcase/images/demo/avatar/{{option.image}}"
+                              width="32" style="vertical-align: middle" />
+                            <span class="ml-1">{{option.name}}</span>
+                          </div>
+                        </ng-template>
+                      </p-multiSelect>
+                    </ng-template>
+                  </p-columnFilter>
+                </div>
+              </th>
+              <th>
+                <div class="flex justify-content-center align-items-center">
+                  Date
+                  <p-columnFilter type="date" field="date" display="menu"></p-columnFilter>
+                </div>
+              </th>
+
+              <th>
+                <div class="flex justify-content-center align-items-center">
+                  Status
+                  <p-columnFilter field="status" matchMode="equals" display="menu">
+                    <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                      <p-dropdown [ngModel]="value" [options]="statuses" (onChange)="filter($event.value)"
+                        placeholder="Any">
+                        <ng-template let-option pTemplate="item">
+                          <span [class]="'customer-badge status-' + option.value">{{option.label}}</span>
+                        </ng-template>
+                      </p-dropdown>
+                    </ng-template>
+                  </p-columnFilter>
+                </div>
+              </th>
+              <th>
+                <div class="flex justify-content-center align-items-center">
+                  Activity
+                  <p-columnFilter field="activity" matchMode="between" display="menu" [showMatchModes]="false"
+                    [showOperator]="false" [showAddButton]="false">
+                    <ng-template pTemplate="filter" let-filter="filterCallback">
+                      <p-slider [ngModel]="activityValues" [range]="true" (onSlideEnd)="filter($event.values)"
+                        styleClass="m-3"></p-slider>
+                      <div class="flex align-items-center justify-content-center px-2">
+                        <span>{{activityValues[0]}}</span>
+                        <span>{{activityValues[1]}}</span>
+                      </div>
+                    </ng-template>
+                  </p-columnFilter>
+                </div>
+              </th>
+              <th style="width: 8rem">
+                <div class="flex justify-content-center align-items-center">
+                  Verified
+                  <p-columnFilter type="boolean" field="verified" display="menu"></p-columnFilter>
+                </div>
+              </th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-customer>
+            <tr>
+              <td>
+                {{customer.name}}
+              </td>
+              <td>
+                {{customer.country.name}}
+              </td>
+              <td>
+                {{customer.representative.name}}
+              </td>
+              <td>
+                {{customer.date | date: 'MM/dd/yyyy'}}
+              </td>
+              <td>
+                <span [class]="'customer-badge status-' + customer.status">{{customer.status}}</span>
+              </td>
+              <td>
+                <p-progressBar [value]="customer.activity" [showValue]="false"></p-progressBar>
+              </td>
+              <td class="text-center">
+                <i class="pi"
+                  [ngClass]="{'true-icon pi-check-circle': customer.verified, 'false-icon pi-times-circle': !customer.verified}"></i>
+              </td>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="emptymessage">
+            <tr>
+              <td colspan="7">No customers found.</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </p-card>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col-12 mb-2">
+    <p-card>
+      <h5>Filter Row</h5>
+      <p class="m-2">Filters are displayed inline within a separate row.</p>
+      <div class="card">
+        <p-table #dt2 [value]="customers" dataKey="id" [rows]="10" [showCurrentPageReport]="true"
+          [rowsPerPageOptions]="[10,25,50]" [paginator]="true"
+          currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+          [globalFilterFields]="['name','country.name','representative.name','status']">
+          <ng-template pTemplate="caption">
+            <div class="d-flex">
+              <span class="p-input-icon-left ml-auto">
+                <i class="pi pi-search"></i>
+                <input pInputText type="text" (input)="dt2.filterGlobal($any($event.target).value, 'contains')"
+                  placeholder="Search keyword" />
+              </span>
+            </div>
+          </ng-template>
+          <ng-template pTemplate="header">
+            <tr>
+              <th>Name</th>
+              <th>Country</th>
+              <th>Agent</th>
+              <th>Status</th>
+              <th style="width: 6rem">Verified</th>
+            </tr>
+            <tr>
+              <th>
+                <p-columnFilter type="text" field="name"></p-columnFilter>
+              </th>
+              <th>
+                <p-columnFilter type="text" field="country.name"></p-columnFilter>
+              </th>
+              <th>
+                <p-columnFilter field="representative" matchMode="in" [showMenu]="false">
+                  <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                    <p-multiSelect [ngModel]="value" [options]="representatives" placeholder="Any"
+                      (onChange)="filter($event.value)" optionLabel="name">
+                      <ng-template let-option pTemplate="item">
+                        <div class="p-multiselect-representative-option">
+                          {{option.name}}
+                        </div>
+                      </ng-template>
+                    </p-multiSelect>
+                  </ng-template>
+                </p-columnFilter>
+              </th>
+              <th>
+                <p-columnFilter field="status" matchMode="equals" [showMenu]="false">
+                  <ng-template pTemplate="filter" let-value let-filter="filterCallback">
+                    <p-dropdown [ngModel]="value" [options]="statuses" (onChange)="filter($event.value)"
+                      placeholder="Any" [showClear]="true">
+                      <ng-template let-option pTemplate="item">
+                        <span [class]="'customer-badge status-' + option.value">{{option.label}}</span>
+                      </ng-template>
+                    </p-dropdown>
+                  </ng-template>
+                </p-columnFilter>
+              </th>
+              <th>
+                <p-columnFilter type="boolean" field="verified"></p-columnFilter>
+              </th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-customer>
+            <tr>
+              <td>
+                {{customer.name}}
+              </td>
+              <td>
+                {{customer.country.name}}
+              </td>
+              <td>
+                {{customer.representative.name}}
+              </td>
+              <td>
+                <span [class]="'customer-badge status-' + customer.status">{{customer.status}}</span>
+              </td>
+              <td>
+                <i class="pi"
+                  [ngClass]="{'true-icon pi-check-circle': customer.verified, 'false-icon pi-times-circle': !customer.verified}"></i>
+              </td>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="emptymessage">
+            <tr>
+              <td colspan="5">No customers found.</td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </p-card>
+  </div>
+</div>
+<div class="row mt-2">
+  <h5>Table Selection</h5>
+  <p class="m-3">DataTable provides single and multiple selection modes based on row click or using radio button and
+    checkbox elements.</p>
+  <p-card>
+    <div class="card mb-2">
+      <h5>Single</h5>
+      <p class="m-2">In single mode, a row is selected on click event of a row. If the row is already selected then the
+        row gets
+        unselected.</p>
+      <p-table [value]="products" selectionMode="single" [(selection)]="selectedProduct1" dataKey="code"
+        responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr [pSelectableRow]="product">
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+    <div class="card mt-2">
+      <h5 class="px-3">Multiple</h5>
+      <p class="m-2">In multiple mode, selection binding should be an array. For touch enabled devices, selection is
+        managed by
+        tapping and for other devices metakey or shiftkey are required. Setting metaKeySelection property as false
+        enables multiple selection without meta key.</p>
+
+      <p-table [value]="products" selectionMode="multiple" [(selection)]="selectedProducts1" [metaKeySelection]="true"
+        dataKey="code" responsiveLayout="scroll">
+        <ng-template pTemplate="caption">
+          Multiple Selection with MetaKey
+        </ng-template>
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product let-rowIndex="rowIndex">
+          <tr [pSelectableRow]="product" [pSelectableRowIndex]="rowIndex">
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+
+    <p-table [value]="products" selectionMode="multiple" [(selection)]="selectedProducts2" styleClass="mt-5"
+      dataKey="code">
+      <ng-template pTemplate="caption">
+        Multiple Selection without MetaKey
+      </ng-template>
+      <ng-template pTemplate="header">
+        <tr [pSelectableRow]="products">
+          <th>Code</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Quantity</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-product let-rowIndex="rowIndex">
+        <tr [pSelectableRow]="products" [pSelectableRowIndex]="rowIndex">
+          <td>{{product.code}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.category}}</td>
+          <td>{{product.quantity}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </p-card>
+</div>
+
+<div class="row mt-2">
+  <div class="col-12">
+    <p-card>
+      <h5>Column Selection</h5>
+      <p>Selection using custom elements.</p>
+      <p-table [value]="products" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th style="width:4rem"></th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+            <td>
+              <button type="button" pButton pRipple icon="pi pi-search" (click)="selectProduct(product)"></button>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-12">
+    <p-card>
+      <h5>RadioButton</h5>
+      <p>Single selection can also be handled using radio buttons by enabling the selectionMode property of column as
+        "single".</p>
+      <p-table [value]="products" [(selection)]="selectedProduct3" dataKey="code" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+          <tr>
+            <th style="width: 3rem"></th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>
+              <p-tableRadioButton [value]="product"></p-tableRadioButton>
+            </td>
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-12 ">
+    <p-card>
+      <h5>Checkbox Selection</h5>
+      <p class="m-2">Multiple selection can also be handled using checkboxes by enabling the selectionMode property of
+        column as "multiple".</p>
+      <h6>Checkbox-Only Selection</h6>
+      <p-table [value]="products" [(selection)]="selectedProducts3" dataKey="code" responsiveLayout="scroll">
+        <ng-template pTemplate="header">
+          <tr>
+            <th style="width: 3rem">
+              <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+            </th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>
+              <p-tableCheckbox [value]="product"></p-tableCheckbox>
+            </td>
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-12 ">
+    <p-card>
+      <h5>Checkbox Selection</h5>
+      <p class="m-2">Multiple selection can also be handled using checkboxes by enabling the selectionMode property of
+        column as "multiple".</p>
+      <h6>Page-Only Selection</h6>
+      <p-table [value]="products" [(selection)]="selectedProducts4" dataKey="code" responsiveLayout="scroll"
+        [paginator]="true" [rows]="5" [selectionPageOnly]="true">
+        <ng-template pTemplate="header">
+          <tr>
+            <th style="width: 3rem">
+              <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+            </th>
+            <th style="min-width:200px">Code</th>
+            <th style="min-width:200px">Name</th>
+            <th style="min-width:200px">Category</th>
+            <th style="min-width:200px">Quantity</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>
+              <p-tableCheckbox [value]="product"></p-tableCheckbox>
+            </td>
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-12 ">
+    <p-card>
+      <h6>Controlled Selection</h6>
+      <p-table [value]="products" [(selection)]="selectedProducts5" dataKey="code" responsiveLayout="scroll"
+        [rowSelectable]="isRowSelectable">
+        <ng-template pTemplate="header">
+          <tr>
+            <th style="width: 3rem">
+              <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+            </th>
+            <th style="min-width:200px">Code</th>
+            <th style="min-width:200px">Name</th>
+            <th style="min-width:200px">Category</th>
+            <th style="min-width:200px">Quantity</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td>
+              <p-tableCheckbox [value]="product" [disabled]="isOutOfStock(product)"></p-tableCheckbox>
+            </td>
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-12 ">
+    <p-card>
+      <h6>Table Responsive</h6>
+      <p class="m-2">DataTable display can be optimized according for different screen sizes, this example demonstrates
+        a demo where columns are stacked on a small screens.</p>
+      <p-table responsiveLayout="scroll" [value]="products">
+        <ng-template pTemplate="caption">
+          Scroll
+        </ng-template>
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th>Name </th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Status</th>
+            <th>Reviews</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product let-columns="columns">
+          <tr>
+            <td>{{product.name}}</td>
+            <td>{{product.price | currency:'USD'}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+            <td><span
+                [class]="'product-badge status-' + (product.inventoryStatus ? product.inventoryStatus.toLowerCase() : '')">{{product.inventoryStatus}}</span>
+            </td>
+            <td>
+              <p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false"></p-rating>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+      <hr>
+      <p-table responsiveLayout="stack" [value]="products">
+        <ng-template pTemplate="caption">
+          Stack
+        </ng-template>
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th>Name </th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Status</th>
+            <th>Reviews</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product let-columns="columns">
+          <tr>
+            <td><span class="p-column-title">Name</span>{{product.name}}</td>
+            <td><span class="p-column-title">Price</span>{{product.price | currency:'USD'}}</td>
+            <td><span class="p-column-title">Category</span>{{product.category}}</td>
+            <td><span class="p-column-title">Quantity</span>{{product.quantity}}</td>
+            <td><span class="p-column-title">Status</span><span
+                [class]="'product-badge status-' + (product.inventoryStatus ? product.inventoryStatus.toLowerCase() : '')">{{product.inventoryStatus}}</span>
+            </td>
+            <td><span class="p-column-title">Reviews</span>
+              <p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false"></p-rating>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </p-card>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-12 ">
+    <p-card>
+      <h6>Table ContextMenu</h6>
+      <p class="m-2">Table has exclusive integration with ContextMenu.</p>
+      <p-contextMenu #cm [model]="items"></p-contextMenu>
+        <p-table [value]="products" [(contextMenuSelection)]="selectedProduct" [contextMenu]="cm" dataKey="code">
+          <ng-template pTemplate="header">
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Price</th>
+            </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-product>
+            <tr [pContextMenuRow]="product">
+              <td>{{product.code}}</td>
+              <td>{{product.name}}</td>
+              <td>{{product.category}}</td>
+              <td>{{product.price | currency: 'USD'}}</td>
+            </tr>
+          </ng-template>
+        </p-table>
+    </p-card>
+  </div>
+</div>
+<!-- <div class="row mt-2">
+  <div class="col-12 ">
+    <p-card>
+      <h6>Table Reorder</h6>
+      <p class="m-2">Order of the columns and rows can be changed using drag and drop.</p>
+      <p-table [value]="products" [columns]="cols" [reorderableColumns]="true" responsiveLayout="scroll">
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th style="width:3rem"></th>
+            <th *ngFor="let col of columns" pReorderableColumn>
+                {{col.header}}
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rowData let-columns="columns" let-index="rowIndex">
+        <tr [pReorderableRow]="index">
+            <td>
+                <span class="pi pi-bars" pReorderableRowHandle></span>
+            </td>
+            <td *ngFor="let col of columns">
+                {{rowData[col.field]}}
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+    </p-card>
+  </div>
+</div> -->

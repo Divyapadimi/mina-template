@@ -1,0 +1,10 @@
+.form-control{
+    box-shadow: none;
+}
+.form-control:focus {
+    color: #212529;
+    border-color:#a8abdf ;
+}
+.is-invalid{
+border-color: red;
+}

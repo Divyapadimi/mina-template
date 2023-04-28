@@ -1,0 +1,63 @@
+<h5>Forms</h5>
+<div class="row mt-2">
+  <p-card header="Personal Information">
+    <form [formGroup]="formData">
+      <div class="row" *ngFor="let list of personalInformation">
+        <label class="col-12">{{list.label}}</label>
+        <div class="col-12" [class.invalid]="formData.get('{{list.formControlName}}')?.invalid && formData.get('{{list.formControlName}}')?.touched ">
+          <app-resuable-input placeholder="{{list.placeholder}}" type="{{list.type}}"  formControlName="{{list.formControlName}}"></app-resuable-input>
+  <div *ngIf="formData.get('{{list.formControlName}}')?.invalid && formData.get('{{list.formControlName}}')?.touched ">
+    <span>Value is required</span>
+  </div>
+          </div>
+        </div>
+      <div class="text-center mt-3">
+        <button type="submit" class="btn btn-style ">Submit</button>
+      </div>
+      <!-- <div class="mb-2">
+        <div *ngFor="let list of personalInformation">
+        <app-resuable-input class="my-3" placeholder="{{list.placeholder}}" type="{{list.type}}" formControlName="{{list.FormControlName}}"></app-resuable-input>
+        <div class="bg-dark text-white" *ngIf="list">
+          <span class="bg-dark">Error</span>
+        </div>
+      </div> -->
+      <!-- <div class="row">
+        <div class="mb-2 col-6" *ngFor="let list of persondetails">
+          <label class="col-12">{{list.label}}</label>
+          <div class="col-12">
+            <app-resuable-input placeholder="{{list.placeholder}}" type="{{list.type}}"></app-resuable-input>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="mb-2" *ngFor="let list of person">
+        <label class="col-12 ">{{list.label}}</label>
+        <div class="col-12">
+          <app-resuable-input placeholder="{{list.placeholder}}" type="{{list.type}}"></app-resuable-input>
+        </div>
+      </div> -->
+    </form> 
+  </p-card>
+</div>
+<!-- <div class="row mt-2">
+  <p-card header="Company Details">
+    <form>
+      <div class="mb-2" *ngFor="let list of companydetails">
+        <label class="col-12">{{list.label}}</label>
+        <div class="col-12">
+          <app-resuable-input placeholder="{{list.placeholder}}" type="{{list.type}}"></app-resuable-input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-2 col-6" *ngFor="let list of companydetails1">
+          <label class="col-12">{{list.label}}</label>
+          <div class="col-12">
+            <app-resuable-input placeholder="{{list.placeholder}}" type="{{list.type}}"></app-resuable-input>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="text-center mt-3">
+      <button type="submit" class="btn btn-style ">Submit</button>
+    </div>
+  </p-card>
+</div> -->

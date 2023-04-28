@@ -1,0 +1,130 @@
+<div class="body">
+  <div class="header">
+    <nav class="navbar navbar-light bg-light">
+      <div class="d-flex">
+        <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- search.. -->
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username"
+            aria-describedby="basic-addon2" autocomplete="off" autofocus="off">
+          <span class="input-group-text" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+      </div>
+      <div class="d-flex ms-auto">
+        <div class="dropdown d-inline-block dropstart" ngbDropdown>
+          <button type="button" class="btn header-item " id="page-header-notifications-dropdown" ngbDropdownToggle>
+            <img src="assets/images/us.jpg" width="30px" height="20px">
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <li class="" *ngFor="let web of countries">
+              <button ngbDropdownItem><img src="{{web.img}}" width="25px" height="20px"> {{web.name}}</button>
+            </li>
+          </div>
+        </div>
+        <!-- Theme -->
+        <div class="dropdown d-inline-block" ngbDropdown>
+          <button type="button" class="btn header-item " id="page-header-notifications-dropdown" ngbDropdownToggle>
+            <i class="pi pi-moon pt-1"></i>
+          </button>
+        </div>
+        <!-- websites -->
+        <div class="dropdown d-inline-block dropstart" ngbDropdown>
+          <button type="button" class="btn header-item " id="page-header-notifications-dropdown" ngbDropdownToggle>
+            <i class="pi pi-th-large pt-1"></i>
+          </button>
+          <div ngbDropdownMenu class="dropdown-menu-lg mx-3 ">
+            <div class="row ">
+              <div class="col-4 text-center p-2" *ngFor="let list of websites">
+                <img src="{{list.img}}" width="25px" height="25px">
+                <div class="websites">{{list.name}}</div>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-4 text-center p-2" *ngFor="let list of websites1">
+                <img src="{{list.img}}" width="25px" height="25px">
+                <div class="websites">{{list.name}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notification -->
+        <div class="dropdown d-inline-block dropstart" ngbDropdown>
+          <button type="button" class="btn header-item " id="page-header-notifications-dropdown" ngbDropdownToggle>
+            <i class="pi pi-bell pt-1"></i>
+            <span class="badge bg-danger rounded-pill">5</span>
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-menu-lg">
+            <div class="p-3">
+              <div class="row align-items-center">
+                <div class="col">
+                  <h6 class="m-0">Notifications</h6>
+                </div>
+                <div class="col"><a class="small">unread(3)</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Settings -->
+        <div class="dropdown d-inline-block " ngbDropdown>
+          <p-sidebar [(visible)]="visibleSidebar2" position="right" [baseZIndex]="10000">
+            <hr>
+            <div class="p-4">
+              <h6 class="mb-3">Layout</h6>
+            </div>
+          </p-sidebar>
+          <button type="button" class="btn header-item " (click)="visibleSidebar2 = true"
+            id="page-header-notifications-dropdown" ngbDropdownToggle>
+            <i class="pi pi-cog pt-1"></i>
+          </button>
+        </div>
+        <!-- profile-->
+        <div class="dropdown d-inline-block dropstart" ngbDropdown>
+          <button type="button" class="btn header-item user " id="page-header-notifications-dropdown" ngbDropdownToggle>
+            <img class=" rounded-circle header-profile-user" src="assets/images/avatar-1.jpg">
+            <span class="d-inline-block">Shawn L.</span>
+            <i class="pi pi-chevron-down"></i>
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem>Profile</button>
+            <button ngbDropdownItem> <i class="fa fa-lock" aria-hidden="true"></i> Lock Screen</button>
+            <hr class="dropdown-divider">
+            <button ngbDropdownItem> <i class="fa fa-sign-out" aria-hidden="true"></i> Lock Out</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="pt-5 mt-2">
+    <div class="wrapper">
+      <nav id="sidebar" [ngClass]="{ 'active': navbarOpen }">
+        <div class="side-nav-content mt-3">
+          <ul class="nav-list">
+            <li class="menu-title">Menu</li>
+            <li class="nav-list-item" *ngFor="let item of List">
+              <i class="{{item.icon}}"></i>
+              <span><a routerLink="{{item.routing}}">{{item.name}}</a></span>
+            </li>
+            <li class="menu-title">Elements</li>
+          </ul>
+          <li class="nav-list-item" *ngFor="let element of Elements">
+            <i class="{{element.icon}}"></i>
+            <span><a routerLink="{{element.routing}}">{{element.name}}</a></span>
+          </li>
+        </div>
+
+      </nav>
+      <div id="content">
+        <router-outlet></router-outlet>
+      
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

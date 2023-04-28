@@ -1,0 +1,76 @@
+<h4>Components</h4>
+<div class="mb-3">
+  <p-card>
+    <h4>Carousel</h4>
+    <p class="m-3">Carousel is a content slider featuring various customization options.</p>
+    <div class="m-3">
+      <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false"
+        [responsiveOptions]="responsiveOptions">
+        <ng-template let-product pTemplate="item">
+          <div class="product-item text-center">
+            <div class="product-item-content">
+              <div class="mb-4">
+                <img [src]="'assets/products/Images/' + product.image" [alt]="product.name" width="70"
+                  class="product-image" />
+              </div>
+              <div>
+                <h6 class="mb-2 mt-2">{{product.name}}</h6>
+                <h6 class="mt-0 mb-3">${{product.price}}</h6>
+                <span
+                  [class]="'product-badge status-'+product.inventoryStatus.toLowerCase()">{{product.inventoryStatus}}</span>
+                <div class="car-buttons mt-3">
+                  <p-button type="button" styleClass="p-button p-button-rounded mr-2" icon="pi pi-search"></p-button>
+                  <p-button type="button" styleClass="p-button-success p-button-rounded mr-2" icon="pi pi-star-fill">
+                  </p-button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </p-card>
+</div>
+<div class="mb-3">
+  <p-card>
+    <h4>Accordion</h4>
+    <p class="m-3">Accordion groups a collection of contents in tabs.</p>
+    <p-accordion>
+      <p-accordionTab header="Header 1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tempore asperiores est a molestiae placeat
+        exercitationem cupiditate aspernatur hic, cumque sed nisi iusto tempora. Tempore officiis quasi ratione
+        recusandae placeat.
+      </p-accordionTab>
+      <p-accordionTab header="Header 2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tempore asperiores est a molestiae placeat
+        exercitationem cupiditate aspernatur hic, cumque sed nisi iusto tempora. Tempore officiis quasi ratione
+        recusandae placeat.
+      </p-accordionTab>
+      <p-accordionTab header="Header 3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tempore asperiores est a molestiae placeat
+        exercitationem cupiditate aspernatur hic, cumque sed nisi iusto tempora. Tempore officiis quasi ratione
+        recusandae placeat.
+      </p-accordionTab>
+    </p-accordion>
+  </p-card>
+</div>
+
+<div class="mb-3">
+  <p-card>
+    <h4>Dialog</h4>
+    <p class="m-3">Dialog is a container to display content in an overlay window.</p>
+
+    <p-button (click)="showBasicDialog()" icon="pi pi-external-link" label="Show"></p-button>
+    <p-dialog header="Header" [(visible)]="displayBasic" [style]="{width: '50vw'}">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <ng-template pTemplate="footer">
+        <p-button icon="pi pi-check" (click)="displayBasic=false" label="Ok" styleClass="p-button-text"></p-button>
+      </ng-template>
+    </p-dialog>
+  </p-card>
+</div>

@@ -1,0 +1,32 @@
+
+.bg-soft-success {
+    background-color: rgba(42,181,125,.25)!important;
+}
+
+.p-card{
+    box-shadow: none;
+    border: 1px solid black;
+    .p-card-content {
+        padding: -1.75rem 0;
+    }
+}
+:host::ng-deep .p-card .p-card-content {
+        padding: -1.75rem 0 !important;
+}
+.card{
+    padding:10px
+}
+.bg-soft-secondary {
+    color: #74788d;
+    background-color: rgba(116,120,141,.1);
+    border-color: transparent;
+}
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: .765625rem;
+    border-radius: 0.2rem;
+    margin: 2px;
+}
+.bg-soft-secondary:hover{
+    background-color:#414598 ;
+}

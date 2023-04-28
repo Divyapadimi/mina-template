@@ -1,0 +1,46 @@
+
+
+label{
+    font-weight: 600;
+}
+.form-control{
+    box-shadow: none;
+    :focus {
+        color: #212529;
+        border-color:#a8abdf ;
+    }
+}
+.btn-style{
+    background-color: #414598 ;
+    color: white;
+}
+
+.form-check-input:checked {
+    background-color: #5156be;
+    border-color: #5156be;
+}
+.form-check-right {
+    padding-left: 0;
+    display: inline-block;
+    padding-right: 1.5em;
+}
+.color{
+    color: red;
+}
+.form-check-label{
+font-weight: 500;
+}
+// .form-switch-lg {
+//     font-size: 26px;
+//     min-height: 36px;
+//     line-height: 36px;
+// }
+// .vr {
+//     display: inline-block;
+//     -ms-flex-item-align: stretch;
+//     align-self: stretch;
+//     width: 1px;
+//     min-height: 1em;
+//     background-color: currentColor;
+//     opacity: .2;
+// }

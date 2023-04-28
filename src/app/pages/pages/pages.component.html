@@ -1,0 +1,28 @@
+
+<h4>Pages</h4>
+<p-card>
+  <div class="card mb-3">
+    <div class="card-header">
+      <h4 class="card-title">Timeline</h4>
+    </div>
+    <div class="card-body">
+      <p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
+        <ng-template pTemplate="marker" let-event>
+          <span class="custom-marker shadow-2" [style.backgroundColor]="event.color">
+            <i [ngClass]="event.icon"></i>
+          </span>
+        </ng-template>
+        <ng-template pTemplate="content" let-event>
+            <div class="card">
+            <p-card [header]="event.status" [subheader]="event.date" >
+            <p class="text-muted">Perspitis unde omnis it voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae explicabo.</p>
+            </p-card>
+        </div>
+        </ng-template>
+      </p-timeline>
+    </div>
+  </div>
+</p-card>
+
+
+
